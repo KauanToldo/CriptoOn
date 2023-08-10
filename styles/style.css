@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Black: #000000;
+    --White: #FFFFFF;
+    --Gray: #141414;
+    --Orange: #CE5F20;
+    --Yellow: #EED44C;
+    --Gold: #DAA520;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100px;
+    background-color: #f5f4f4aa;
+}
+
+header #navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header #navbar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .btn-navbar-mobile {
+    position: absolute;
+    right: 50px;
+    display: none;
+    font-size: 2em;
+}
+
+#navbar h3 {
+    font-weight: 500;
+}
+
+#navbar img {
+    transform: rotateX(-180deg);
+}
+
+#title-header {
+    color: var(--Gold);
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+}
+
+#btn-newslerner {
+    border: none;
+    background-color: var(--Gold);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../src/background-home.png);
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#title-home {
+    font-size: 80px;
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    line-height: 80px;
+    letter-spacing: 3px;
+    margin-left: 8vh
+}
+
+#title-home span {
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--Gold);
+}
+
+@media screen and (max-width: 760px) {
+
+    #title-home span {
+        font-size: 50px;
+    }
+
+    #line-title {
+        display: none;
+    }
+
+    #home {
+        justify-content: center;
+    }
+
+    #btn-newslerner {
+        display: none !important;
+    }
+
+    header .btn-navbar-mobile {
+        display: block !important;
+    }
+
+    #navbar {
+        display: none !important;
+    }
+
+    #title-home {
+        font-size: 60px;
+        line-height: 50px;
+        margin-left: 0 !important;
+        animation: slide-in-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both !important;
+    }
+
+    #title-container {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+}
+
+#divisor-home {
+    margin-top: -90px;
+    width: 100%;
+}
+
+#coin {
+    position: absolute;
+    top: 15.5vh;
+}
+
+#title-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15vh;
+}
+
+#line-title {
+    width: 4px;
+    height: 250px;
+    background-color: var(--Gold);
+}
+
+#title-home {
+	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+@keyframes slide-in-down {
+    0% {  
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+
+.arrow-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4em;
+    opacity: .8;
+    animation: arrow-pulse .8s infinite alternate;
+}
+
+@keyframes arrow-pulse {
+    0% {
+        bottom: 50px;
+    }
+    100% {
+        bottom: 60px;
+    }
+}
+
+#criptomoeda-section {
+    width: 100%;
+    background: linear-gradient(180deg, #111 19.79%, #1B1A1A 100%);
+}
+
+#uq {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--Gray);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--Gold);
+    border-radius: 10px;
+  }
