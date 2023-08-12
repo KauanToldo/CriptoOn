@@ -83,9 +83,33 @@
                     </div>
                 </div>
             </div>
-            <div class="section" id="conversor">
-                <div id="conversor-container">
-                    
+            <div id="conversor">
+                <h1 class="subtitle">CONVERTA SUAS CRIPTOMEDAS</h1>
+                <div id="board">
+                    <div id="inputs">
+                        <div>
+                            <label for="">Criptomoeda</label>
+                            <select name="" id="coin">
+                                <option value="bitcoin">Bitcoin</option>
+                                <option value="ethereum">Ethereum</option>
+                                <option value="litecoin">Litecoin</option>
+                            </select>
+                        </div>
+                        <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.4241 20.5468L12.6299 20.5468C12.3052 20.5468 12.0419 20.8091 12.0419 21.1327V23.8671C12.0419 24.1907 12.3052 24.453 12.6299 24.453L27.4241 24.453V26.702C27.4241 27.746 28.6908 28.2689 29.4316 27.5306L33.6482 23.3285C34.1075 22.8709 34.1075 22.1289 33.6482 21.6713L29.4316 17.4692C28.6908 16.7309 27.4241 17.2538 27.4241 18.2978V20.5468Z" fill="#F7931A"/>
+                            <path d="M8.57586 14.4532H23.3701C23.6948 14.4532 23.9581 14.1909 23.9581 13.8673V11.1329C23.9581 10.8093 23.6948 10.547 23.3701 10.547H8.57586V8.29802C8.57586 7.25398 7.30924 6.73112 6.5684 7.46936L2.35176 11.6715C1.89251 12.1291 1.89251 12.8711 2.35176 13.3287L6.5684 17.5308C7.30919 18.2691 8.57586 17.7462 8.57586 16.7022V14.4532Z" fill="#F7931A"/>
+                        </svg>
+                        <div>
+                            <label for="">Moeda Real</label>
+                            <select name="" id="currency">
+                                <option value="brl">BRL</option>
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="convert" onclick="converter()">CONVERTER</button>
+                    <p id="resultado">Nenhuma moeda convertida!</p>
                 </div>
             </div>
         </section>

@@ -61,6 +61,10 @@ header .btn-navbar-mobile {
     font-weight: 500;
 }
 
+#navbar svg {
+    transform: rotateX(-180deg);
+}
+
 #title-header {
     color: var(--Gold);
     font-family: 'Teko', sans-serif;
@@ -323,6 +327,128 @@ li {
     gap: 10px;
 }
 
+/* ------------------------------------------------- CONVERSOR ------------------------------------------------------ */
+
+#conversor {
+    min-height: 100vh;
+    background-image: url(../src/conversor-background.png);
+    background-size: cover;
+    width: 100%;
+    mix-blend-mode: exclusion;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#conversor label {
+    color: #FFF;
+    font-family: Rajdhani;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#conversor h1 {
+    color: var(--Orange);
+    font-family: Teko;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 7.2px;
+    margin-bottom: 50px;
+}
+
+#board {
+    min-height: 600px;
+    width: 65%;
+    border-radius: 30px;
+    background: rgba(15, 15, 15, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+#inputs {
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+select, option {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid #F7931A;
+    background: rgba(217, 217, 217, 0.00);
+    color: white;
+}
+
+option {
+    background-color: black;
+}
+
+#inputs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+    font-family: Rajdhani;
+    margin: 10px;
+}
+
+#inputs svg {
+    cursor: pointer;
+}
+
+select {
+    font-size: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    background: orange;
+    border: none;
+    color: #FFF;
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+button:hover {
+    background: rgb(223, 145, 0);
+    transform: translateY(-2px);
+}
+
+#resultado {
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid var(--Orange);
+    font-family: Rajdhani;
+    font-weight: 500;
+    color: var(--White);
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
 
 /* --------------------------------------------- MEDIA QUERIES ------------------------------------------------------ */
 
@@ -330,6 +456,15 @@ li {
 
     .section {
         padding: 0px 50px !important;
+    }
+
+    #inputs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #inputs svg {
+        transform: rotate(-90deg);
     }
 
     #uq {
@@ -378,6 +513,10 @@ li {
 
     #title-home span {
         font-size: 50px;
+    }
+
+    #inputs select {
+        width: 200px;
     }
 
     #uq img {
