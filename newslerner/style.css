@@ -69,6 +69,7 @@ input:focus{
 
 input{
     display: flex;
+    background-color: transparent;
 }
 
 input::placeholder{

@@ -203,6 +203,7 @@ header .btn-navbar-mobile {
 
 .titleright {
     animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    text-align: right;
 }
 
 .paragraph {
@@ -220,7 +221,7 @@ header .btn-navbar-mobile {
 
 .section {
     padding: 0px 100px;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
 }
 
 /* ------------------------------------------------- TIPOS ---------------------------------------------------------- */
@@ -313,7 +314,7 @@ li {
     align-items: center;
 }
 
-#line-carroussel svg {
+#line-carroussel .line-icon-tipos {
     background-color: rgba(167, 148, 148, 0.13);
     padding: 20px;
     border-radius: 50%;
@@ -323,7 +324,7 @@ li {
     cursor: pointer;
 }
 
-#line-carroussel svg:first-child {
+#line-carroussel .line-icon-tipos:first-child {
     opacity: 0.6;
 }
 
@@ -565,7 +566,8 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
 }
 
 #valorizacao .paragraph, #valorizacao span {
@@ -603,6 +605,123 @@ button:hover {
     align-self: flex-end;
 }
 
+/* --------------------------------------------------------- MOEDAS EVOLUÇÃO ----------------------------------------------------------------- */
+
+#icons-moedas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons-moedas img {
+    width: 250px;
+    height: 250px;
+}
+
+#icons-moedas h6 {
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#moedas-historia {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#moedas-historia .paragraph {
+    text-align: justify;
+}
+
+#moedas-historia h3 {
+    color: var(--Orange);
+    font-family: Teko;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#line-carroussel .line-icon-moedas {
+    background-color: rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+#line-carroussel .line-icon-moedas:first-child {
+    opacity: 0.6;
+}
+
+#icons-moedas img {
+    width: 427px;
+    height: 460px;
+}
+
+#icons-moedas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------------------------- MINERAÇÃO ----------------------------------------------------- */
+
+#mineracao .subtitle-container {
+    flex-direction: row-reverse;
+}
+
+#info-mineracao {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    text-align: right;
+    align-items: center;
+}
+
+/* -------------------------------------------------------- CRIAÇÃO VIDEO --------------------------------------------- */
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+#video-section h2 {
+    color: var(--Black);
+    font-family: Teko;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8.1px;
+}
+
+#video-section span {
+    color: #CE5F20;
+}
+
+#video-section div {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-color: gray;
+}
+
+#video-section img {
+    cursor: pointer;
+}
+
 /* ---------------------------------------------------------- MEDIA QUERIES ------------------------------------------------------------------ */
 
 @media screen and (max-width: 949px) {
@@ -618,6 +737,20 @@ button:hover {
 }
 
 @media screen and (max-width: 1330px) {
+
+    #info-mineracao {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #mineracao {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #info-mineracao img {
+        max-width: 60%;
+    }
 
     #board {
         width: 90%;
@@ -680,9 +813,23 @@ button:hover {
     #icons img {
         width: 200px;
     }
+
+    #moedas-historia {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #moedas-historia #line-carroussel {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 760px) {
+
+    #video-section h2 {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
 
     #title-home span {
         font-size: 50px;
