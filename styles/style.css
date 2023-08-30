@@ -912,7 +912,6 @@ button:hover {
     width: 100%;
     gap: 75px;
     padding: 0px 150px;
-    margin-top: -50px;
 }
 
 .item-bc img {
@@ -1325,7 +1324,75 @@ button:hover {
 
 /* -------------------------------------------------- TIME --------------------------------------------------------- */
 
+#team {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+#title-team {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-team div {
+    height: 2px;
+    width: 25%;
+    background-color: var(--Gray);
+}
+
+#title-team h2 {
+    color: #F7931A;
+    text-align: center;
+    font-family: Teko;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 8.1px;
+    text-transform: uppercase;
+}
+
+#team-profiles {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.profile {
+    width: 250px;
+    height: 350px;
+    background-color: #797979;
+    background-size: cover;
+}
+
+#kauan {
+    background-image: url(../src/kauan.png);
+}
+
+#maria {
+    background-image: url(../src/maria.png);
+}
+
+#ana {
+    background-image: url(../src/ana.png);
+}
+
+#andre {
+    background-image: url(../src/andre.png);
+}
+
+#lerner {
+    background-image: url(../src/lerner.png);
+}
 
 /* ----------------------------------------------- KEYFRAMES ------------------------------------------------------- */
 
