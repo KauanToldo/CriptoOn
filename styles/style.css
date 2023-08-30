@@ -23,6 +23,41 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------- NAVBAR ABERTA --------------------------------------- */
+
+.fechada {
+    display: none !important;
+}
+
+.aberta {
+    display: flex;
+}
+
+#navbar-aberta {
+    position: absolute;
+    padding: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f5f4f4aa;
+}
+
+#navbar-aberta a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Rajdhani;
+    font-weight: 500;
+}
+
 /* --------------------------------------------------- HEADER -------------------------------------------------------- */
 
 header {
@@ -1212,6 +1247,14 @@ button:hover {
     grid-template-rows: repeat(2, 134px);
 }
 
+.flag:hover {
+    scale: 1.2;
+}
+
+.flag {
+    transition: .2s ease-in;
+}
+
 #eua-jap {
     margin-top: 100px;
     display: flex;
@@ -1392,6 +1435,28 @@ button:hover {
 
 #lerner {
     background-image: url(../src/lerner.png);
+}
+
+#matteo {
+    background-image: url(../src/matteo.jpeg);
+}
+
+#davi {
+    background-image: url(../src/davi.jpeg);
+}
+
+/* ------------------------------------------------- ANIMAÇÃO SEÇÕES -------------------------------------------------- */
+
+.reveal{
+    position: relative;
+    top: 150px;
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+top: 0;
+opacity: 1;
 }
 
 /* ------------------------------------------------ FOOTER --------------------------------------------------------- */
