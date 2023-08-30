@@ -889,6 +889,66 @@ button:hover {
     }
 }
 
+/* --------------------------------------------------- BLOCKCHAIN -------------------------------------------------- */
+
+#blockchain-section .paragraph {
+    max-width: 45%;
+    text-align: justify;
+}
+
+#blockchain {
+    width: 100%;
+}
+
+#itens-blockchain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 75px;
+    padding: 0px 150px;
+    margin-top: -50px;
+}
+
+.item-bc img {
+    background-color: radial-gradient(50% 50.00% at 50% 50.00%, #D9D9D9 46.88%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.item-bc {
+    display: flex;
+    max-width: 600px;
+    gap: 30px;
+    align-items: center;
+}
+
+.item-bc h3 {
+    color: #CE5F20;
+    font-family: Teko;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.item-bc p {
+    color: #000;
+    text-align: justify;
+    font-family: Rajdhani;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.item-bc:first-child {
+    align-self: flex-end;
+}
+
+.item-bc:nth-child(2) {
+    align-self: center;
+}
+
+
 /* ----------------------------------------------- KEYFRAMES ------------------------------------------------------- */
 
 @keyframes arrow-pulse {
