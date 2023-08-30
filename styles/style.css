@@ -154,6 +154,12 @@ header .btn-navbar-mobile {
     background: linear-gradient(180deg, #1E1E1E 0%, transparent 100%);
 }
 
+#shadow-down {
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(-180deg, transparent 0%, #1e1e1e 100%);
+}
+
 #uq {
     display: flex;
     align-items: center;
@@ -1098,6 +1104,195 @@ button:hover {
 
 .item-cf:nth-child(2) {
     margin-top: 200px;
+}
+
+/* ---------------------------------------------- REGULAMENTAÇÃO --------------------------------------------------- */
+
+#aplicacao-section {
+    background: linear-gradient(180deg, #111 19.79%, #1B1A1A 100%);
+    min-height: 100vh;
+}
+
+#regulamentacao {
+    padding-top: 100px;
+}
+
+#regulamentacao .subtitle-container {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#info-reg {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+#info-reg div {
+    max-width: 700px;
+}
+
+#info-reg h3 {
+    color: #CE5F20;
+    font-family: Teko;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#info-reg img {
+    width: 35%;
+}
+
+#info-reg .paragraph {
+    text-align: justify;
+}
+
+/* ---------------------------------------------- LINE REGULAMENTAÇÃO ---------------------------------------------- */
+
+#line-reg {
+    width: 100vw;
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px ;
+}
+
+#line-reg div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100px;
+}
+
+#line-reg div h3 {
+    color: #F7931A;
+    font-family: Rajdhani;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#line-reg div h6 {
+    color: #FFF;
+    font-family: Rajdhani;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ------------------------------------------------- PAISES -------------------------------------------------------- */
+
+#first-paises {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#first-paises p {
+    font-size: 27px;
+    max-width: 700px;
+    text-align: justify;
+}
+
+#flags {
+    display: grid;
+    grid-template-columns: repeat(3, 201px);
+    grid-template-rows: repeat(2, 134px);
+}
+
+#eua-jap {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#eua-jap img {
+    width: 100px;
+}
+
+#eua-jap h3 {
+    color: #FBFF16;
+    font-family: Rajdhani;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#eua, #jap {
+    max-width: 500px;
+    text-align: justify;
+}
+
+#dados-paises {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dados-paises h3 {
+    color: #DAA520;
+    font-family: Teko;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.dado-pais {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.dado-pais p {
+    font-size: 27px;
+}
+
+.dado-pais div {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFF;
+    color: #DAA520;
+    font-family: Rajdhani;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.dado-pais:nth-child(3) {
+    flex-direction: row-reverse;
 }
 
 /* ----------------------------------------------- KEYFRAMES ------------------------------------------------------- */
