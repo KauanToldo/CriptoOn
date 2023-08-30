@@ -1394,6 +1394,52 @@ button:hover {
     background-image: url(../src/lerner.png);
 }
 
+/* ------------------------------------------------ FOOTER --------------------------------------------------------- */
+
+footer {
+    background-image: url(../src/background-footer.png);
+    background-size: cover;
+    min-height: 90vh;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    margin-bottom: 50px;
+}
+
+footer button {
+    margin: 25px 0px;
+}
+
+#line-end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 25px;
+}
+
+#line-end div {
+    height: 1px;
+    background-color: var(--Gold);
+    width: 95%;
+}
+
+#line-end h2 {
+    color: #FFF;
+    font-family: Rajdhani;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
 /* ----------------------------------------------- KEYFRAMES ------------------------------------------------------- */
 
 @keyframes arrow-pulse {
