@@ -1295,6 +1295,38 @@ button:hover {
     flex-direction: row-reverse;
 }
 
+/* ------------------------------------------------ LEGALIZACAO ------------------------------------------------------ */
+
+#perspectivas {
+    min-height: 100vh;
+    width: 100vw;
+    background: url(../src/background-legalizacao.png), lightgray 50%;
+    background-size: cover;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+#perspectivas p {
+    max-width: 600px;
+}
+
+#perspectivas label {
+    margin-top: 50px;
+    font-size: 27px;
+    font-family: Rajdhani;
+    color: var(--Gold);
+    font-weight: bold;
+}
+
+#perspectivas button {
+    width: 400px;
+}
+
+/* -------------------------------------------------- TIME --------------------------------------------------------- */
+
+
+
 /* ----------------------------------------------- KEYFRAMES ------------------------------------------------------- */
 
 @keyframes arrow-pulse {
