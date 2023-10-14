@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/logomoeda.ico" type="image/x-icon" sizes="16x16" />
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -13,13 +14,18 @@
     <title>CriptoON</title>
 </head>
 <body>
-    <div id="navbar-aberta" class="fechada">
-        <a href="#criptomoeda-section"><li>Criptomoeda</li></a>
-        <a href="#origem-section"><li>Origem</li></a>
-        <a href="#aplicacao-section"><li>Aplicação</li></a>
+    <div id="navbar-aberta-container" class="fechada">
+        <div id="navbar-aberta">
+            <a href="#criptomoeda-section"><li>Criptomoeda</li></a>
+            <a href="#origem-section"><li>Origem</li></a>
+            <a href="#aplicacao-section"><li>Aplicação</li></a>
+        </div>
     </div>
     <header>
-        <h1 id="title-header">CriptoON</h1>
+        <div>
+            <img src="src/logo.png" alt="">
+            <h1 id="title-header">CriptoON</h1>
+        </div>
         <div id="navbar">
             <h3>Menu</h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11" fill="none">
@@ -35,7 +41,7 @@
                 <div id="line-title"></div>
                 <h1 id="title-home">O outro lado da<br><span>CRIPTOMOEDA</span></h1>
             </div>
-            <ion-icon class="arrow-down" name="chevron-down-outline"></ion-icon>
+            <a href="#criptomoeda-section"><ion-icon class="arrow-down" name="chevron-down-outline"></ion-icon></a>
         </section>
         <section id="criptomoeda-section">
             <img id="divisor-home" src="src/divisor-home.png" alt="">
@@ -114,7 +120,7 @@
                         </div>
                     </div>
                     <button id="convert" onclick="converter()">CONVERTER</button>
-                    <p id="resultado">Nenhuma moeda convertida!</p>
+                    <p id="resultado"></p>
                 </div>
             </div>
             <div class="reveal section" id="caracteristicas">
@@ -199,15 +205,13 @@
                 </div>
             </div>
             <div class="section reveal" id="video-section">
-                <h2>VOCÊ SABE COMO AS CRIPTOMOEDAS SÃO<br><span>CRIADAS</span>?</h2>
-                <div id="video">
-                    <img src="src/icon-play.png" alt="">
-                </div>
+                <h2>VOCÊ SABE COMO AS CRIPTOMOEDAS SÃO<br><span>MINERADAS</span>?</h2>
+                <iframe width="90%" height="780" src="https://www.youtube.com/embed/neK8MtkySKU" title="MINERAR BITCOIN? Entenda como funciona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="section reveal" id="blockchain-section">
                 <div class="subtitle-container">
                     <div class="line-titles-white"></div>
-                    <h2 class="subtitle titleleft">MINERAÇÃO</h2>
+                    <h2 class="subtitle titleleft">BLOCKCHAIN</h2>
                 </div>
                 <p class="paragraph">A blockchain é uma tecnologia relativamente recente que está sendo adotada de forma inovadora por vários setores, dentre eles, a bolsa de valores, as impresas de energia e o varejo.</p>
                 <div id="itens-blockchain">
@@ -267,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reveal" id="como-funciona">
+                <!-- <div class="reveal" id="como-funciona">
                     <h3 class="subtitle">COMO FUNCIONA</h3>
                     <div id="itens-cf">
                         <div class="item-cf">
@@ -306,15 +310,15 @@
             </div>
             <div id="line-reg">
                 <div id="paises">
-                    <h3>120</h3>
+                    <h3 class="numbers" >120</h3>
                     <h6>PAÍSES</h6>
                 </div>
                 <div id="regioes">
-                    <h3>57</h3>
+                    <h3 class="numbers" >57</h3>
                     <h6>REGIÕES</h6>
                 </div>
                 <div id="estados">
-                    <h3>2453</h3>
+                    <h3 class="numbers"  >2453</h3>
                     <h6>ESTADOS</h6>
                 </div>
             </div>
@@ -384,7 +388,7 @@
                 <div id="matteo" class="profile"></div>
                 <div id="lerner" class="profile"></div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <img src="src/ifc-logo.png" alt="">

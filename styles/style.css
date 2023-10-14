@@ -38,11 +38,7 @@ html, body {
 }
 
 #navbar-aberta {
-    position: absolute;
     padding: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 100px;
     width: 60%;
     display: flex;
     align-items: center;
@@ -56,6 +52,14 @@ html, body {
     color: black;
     font-family: Rajdhani;
     font-weight: 500;
+}
+
+#navbar-aberta-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
 }
 
 /* --------------------------------------------------- HEADER -------------------------------------------------------- */
@@ -90,6 +94,16 @@ header .btn-navbar-mobile {
     right: 50px;
     display: none;
     font-size: 2em;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header div img {
+    width: 50px;
 }
 
 #navbar h3 {
@@ -173,6 +187,7 @@ header .btn-navbar-mobile {
     font-size: 3em;
     opacity: .8;
     animation: arrow-pulse .8s infinite alternate;
+    color: black;
 }
 
 /* ----------------------------------------------- O QUE É? ---------------------------------------------------------- */
@@ -262,7 +277,7 @@ header .btn-navbar-mobile {
 
 .section {
     padding: 0px 100px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 /* ------------------------------------------------- TIPOS ---------------------------------------------------------- */
@@ -545,7 +560,7 @@ button:hover {
 
 .card {
     width: 350px;
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color: rgba(255, 255, 255, 1);
     height: 225px;
     color: var(--Black);
     border-radius: 7px;
@@ -554,6 +569,8 @@ button:hover {
     cursor: default;
     z-index: 2;
 }
+
+/* ideia do heitor de fazer animação ao redor dos card */
 
 .card h5 {
     text-align: center;
@@ -608,7 +625,7 @@ button:hover {
     background-repeat: no-repeat no-repeat;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 #valorizacao .paragraph, #valorizacao span {
@@ -750,19 +767,6 @@ button:hover {
     color: #CE5F20;
 }
 
-#video-section div {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    background-color: gray;
-}
-
-#video-section img {
-    cursor: pointer;
-}
-
 /* ---------------------------------------------------------- MEDIA QUERIES ------------------------------------------------------------------ */
 
 @media screen and (max-width: 949px) {
@@ -775,9 +779,52 @@ button:hover {
     #cards {
         margin-top: 300px;
     }
+
+    .item-bc {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recurso-card {
+        width: 100% !important;
+    }
+
+    #recursos-cards {
+        display: flex;
+        gap: 80px !important;
+        justify-content: center !important;
+    }
+
+    #meio-recursos {
+        align-items: center !important;
+    }
 }
 
 @media screen and (max-width: 1330px) {
+
+    #video-section iframe {
+        max-height: 380px !important;
+    }
+
+    #blockchain-section {
+        margin-top: 50px;
+    }
+
+    #blockchain-section .paragraph {
+        max-width: 100% !important;
+    }
+
+    .item-bc:first-child, .item-bc:nth-child(3) {
+        align-self: center !important;
+    }
+
+    .item-bc {
+        max-width: 80% !important;
+    }
+
+    #itens-blockchain {
+        padding: 0px 0px !important;
+    }
 
     #info-mineracao {
         flex-direction: column-reverse;
@@ -872,6 +919,11 @@ button:hover {
         letter-spacing: 4px;
     }
 
+    #video-section iframe {
+        width: 100% !important;
+        height: 175px;
+    }
+
     #title-home span {
         font-size: 50px;
     }
@@ -947,6 +999,7 @@ button:hover {
     width: 100%;
     gap: 75px;
     padding: 0px 150px;
+    margin-top: 50px;
 }
 
 .item-bc img {
@@ -1035,6 +1088,13 @@ button:hover {
     background-color: #E8E3E3;
     border-radius: 10px;
     padding: 30px 40px;
+    transition: .2s ease-in-out;
+}
+
+.recurso-card:hover {
+    background: #EED44C;
+    box-shadow: 0px 0px 36px 10px rgba(255, 245, 0, 0.38);
+    scale: 1.05;
 }
 
 .recurso-card div {
@@ -1464,15 +1524,15 @@ opacity: 1;
 footer {
     background-image: url(../src/background-footer.png);
     background-size: cover;
-    min-height: 90vh;
     justify-content: end;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 200px;
 }
 
 footer img {
-    margin-bottom: 50px;
+    width: 100px;
 }
 
 footer button {

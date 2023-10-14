@@ -29,10 +29,64 @@ function converter() {
 
   window.onscroll = () => {
     document.querySelectorAll('.reveal').forEach(e => {
-      if (e.getBoundingClientRect().top < window.innerHeight - 150) {
+      if (e.getBoundingClientRect().top < window.innerHeight - 100) {
         e.classList.add('active');
       } else {
         e.classList.remove('active');
       }
     })
   }
+
+  const navbarBtn = document.querySelector("#navbar")
+  const navbarMobile = document.querySelector("#navbar-aberta-container")
+  const header = document.querySelector("header")
+
+  navbarBtn.addEventListener("mouseover", () => {
+    navbarMobile.classList.toggle("fechada")
+    navbarMobile.classList.toggle("aberta")
+  })
+
+  navbarMobile.addEventListener("mouseout", () => {
+    navbarMobile.classList.toggle("fechada")
+    navbarMobile.classList.toggle("aberta")
+  })
+
+  // animar os numeros de 0 a x 
+
+
+  // counter paises
+
+  
+//   let counter = 0;
+// const interval = setInterval(() => {
+//     console.log(counter);
+//     counter++;
+//     if (counter > 120) {
+//         clearInterval(interval);
+//     }
+// }, 10);
+
+  // counter regioes 
+
+
+  // let counter = 0;
+  // const interval = setInterval(() => {
+  //     console.log(counter);
+  //     counter++;
+  //     if (counter > 57) {
+  //         clearInterval(interval);
+  //     }
+  // }, 10);
+
+
+  // counter estados
+
+  // let counter = 0;
+  // const interval = setInterval(() => {
+  //     console.log(counter2);
+  //     counter ++;
+  //     if (counter > 2453) {
+  //         clearInterval(interval);
+  //     }
+
+  // }, 10);
