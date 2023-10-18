@@ -38,15 +38,19 @@ html, body {
 }
 
 #navbar-aberta {
+    position: absolute;
+    top: 100%;
     padding: 25px;
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #f5f4f4aa;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#navbar-aberta a {
+.links {
     list-style: none;
     text-decoration: none;
     color: black;
@@ -54,19 +58,11 @@ html, body {
     font-weight: 500;
 }
 
-#navbar-aberta-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 100px;
-}
-
 /* --------------------------------------------------- HEADER -------------------------------------------------------- */
 
 header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     align-items: center;
@@ -74,6 +70,8 @@ header {
     padding: 50px;
     height: 100px;
     background-color: #f5f4f4aa;
+    z-index: 3;
+    transition: background-color .2s;
 }
 
 header #navbar {
@@ -451,9 +449,18 @@ li {
 
 #inputs {
     display: flex;
-    width: 85%;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#currency {
+    width: 352px;
+}
+
+#cripto-amount {
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 select, option {
@@ -462,6 +469,34 @@ select, option {
     border: 2px solid #F7931A;
     background: rgba(217, 217, 217, 0.00);
     color: white;
+}
+
+#coin {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#amount {
+    width: 50px;
+    margin-top: 20px;
+    padding: 8.5px 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: 2px solid #F7931A;
+    background: rgba(217, 217, 217, 0.00);
+    color: white;
+    font-weight: bold;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 option {
@@ -488,7 +523,7 @@ select {
     cursor: pointer;
 }
 
-button {
+#btn-newslerner,  #convert, #btn-footer{
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
@@ -629,7 +664,6 @@ button:hover {
 }
 
 #valorizacao .paragraph, #valorizacao span {
-    margin: 0px 40px;
     text-align: justify;
 }
 
@@ -669,11 +703,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#icons-moedas img {
-    width: 250px;
-    height: 250px;
 }
 
 #icons-moedas h6 {
@@ -719,8 +748,8 @@ button:hover {
 }
 
 #icons-moedas img {
-    width: 427px;
-    height: 460px;
+    width: 100%;
+    height: 500px;
 }
 
 #icons-moedas {
@@ -791,7 +820,7 @@ button:hover {
 
     #recursos-cards {
         display: flex;
-        gap: 80px !important;
+        gap: 100px !important;
         justify-content: center !important;
     }
 
@@ -801,10 +830,6 @@ button:hover {
 }
 
 @media screen and (max-width: 1330px) {
-
-    #video-section iframe {
-        max-height: 380px !important;
-    }
 
     #blockchain-section {
         margin-top: 50px;
@@ -837,7 +862,7 @@ button:hover {
     }
 
     #info-mineracao img {
-        max-width: 60%;
+        max-width: 80%;
     }
 
     #board {
@@ -914,9 +939,29 @@ button:hover {
 
 @media screen and (max-width: 760px) {
 
+    #recursos p:nth-child(2) {
+        font-size: 18px !important;
+    }
+
     #video-section h2 {
         font-size: 26px;
         letter-spacing: 4px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    #icons-moedas img {
+        height: 350px !important;
+    }
+
+    .item-bc p {
+        font-size: 20px !important;
+    }
+
+    .item-bc h3 {
+        font-size: 26px !important;
     }
 
     #video-section iframe {
@@ -980,6 +1025,49 @@ button:hover {
     .paragraph {
         font-size: 20px;
     }
+}
+
+/* NAVBAR MOBILE */
+
+#sidebar-aberta-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--Gray);
+    z-index: 5;
+}
+
+#sidebar-aberta-container a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#btn-newslerner-sidebar {
+    border: none;
+    background-color: var(--Gold);
+    color: white;
+    padding: 8px 40px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+}
+
+#btn-close-sidebar {
+    color: var(--Gold);
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 /* --------------------------------------------------- BLOCKCHAIN -------------------------------------------------- */

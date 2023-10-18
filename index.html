@@ -9,19 +9,18 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>CriptoON</title>
 </head>
 <body>
-    <div id="navbar-aberta-container" class="fechada">
-        <div id="navbar-aberta">
-            <a href="#criptomoeda-section"><li>Criptomoeda</li></a>
-            <a href="#origem-section"><li>Origem</li></a>
-            <a href="#aplicacao-section"><li>Aplicação</li></a>
-        </div>
+    <div id="sidebar-aberta-container" class="fechada">
+        <i id="btn-close-sidebar" class="fa-solid fa-xmark"></i>
+        <a href="#criptomoeda-section"><li>Criptomoeda</li></a>
+        <a href="#origem-section"><li>Origem</li></a>
+        <a href="#aplicacao-section"><li>Aplicação</li></a>
+        <a href="./newslerner/cadastro.html"><button id="btn-newslerner-sidebar">Atualize-se</button></a>
     </div>
-    <header>
+    <header id="header-container">
         <div>
             <img src="src/logo.png" alt="">
             <h1 id="title-header">CriptoON</h1>
@@ -34,6 +33,11 @@
         </div>
         <a href="newslerner/cadastro.html"><button id="btn-newslerner">Atualize-se</button></a>
         <ion-icon class="btn-navbar-mobile" name="menu-outline"></ion-icon>
+        <div id="navbar-aberta" class="fechada">
+            <a class="links" href="#criptomoeda-section"><li>Criptomoeda</li></a>
+            <a class="links" href="#origem-section"><li>Origem</li></a>
+            <a class="links" href="#aplicacao-section"><li>Aplicação</li></a>
+        </div>
     </header>
     <main>
         <section id="home">
@@ -100,11 +104,14 @@
                     <div id="inputs">
                         <div>
                             <label for="">Criptomoeda</label>
-                            <select name="" id="coin">
-                                <option value="bitcoin">Bitcoin</option>
-                                <option value="ethereum">Ethereum</option>
-                                <option value="litecoin">Litecoin</option>
-                            </select>
+                            <div id="cripto-amount">
+                                <select name="" id="coin">
+                                    <option value="bitcoin">Bitcoin</option>
+                                    <option value="ethereum">Ethereum</option>
+                                    <option value="litecoin">Litecoin</option>
+                                </select>
+                                <input value="1" type="number" name="" id="amount">
+                            </div>
                         </div>
                         <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M27.4241 20.5468L12.6299 20.5468C12.3052 20.5468 12.0419 20.8091 12.0419 21.1327V23.8671C12.0419 24.1907 12.3052 24.453 12.6299 24.453L27.4241 24.453V26.702C27.4241 27.746 28.6908 28.2689 29.4316 27.5306L33.6482 23.3285C34.1075 22.8709 34.1075 22.1289 33.6482 21.6713L29.4316 17.4692C28.6908 16.7309 27.4241 17.2538 27.4241 18.2978V20.5468Z" fill="#F7931A"/>
@@ -206,7 +213,7 @@
             </div>
             <div class="section reveal" id="video-section">
                 <h2>VOCÊ SABE COMO AS CRIPTOMOEDAS SÃO<br><span>MINERADAS</span>?</h2>
-                <iframe width="90%" height="780" src="https://www.youtube.com/embed/neK8MtkySKU" title="MINERAR BITCOIN? Entenda como funciona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="100%" height="650" src="https://www.youtube.com/embed/neK8MtkySKU" title="MINERAR BITCOIN? Entenda como funciona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="section reveal" id="blockchain-section">
                 <div class="subtitle-container">

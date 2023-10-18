@@ -1,13 +1,20 @@
 function converter() {
+    const amount = document.getElementById('amount').value;
     const coin = document.getElementById('coin').value;
     const currency = document.getElementById('currency').value;
+    const resultado = document.getElementById('resultado');
     const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coin}&vs_currencies=${currency}`;
+    if (amount <= 0) {
+      resultado.innerHTML = "Informe uma quantidade valida!"
+      return
+    }
   
     fetch(url)
       .then(response => response.json())
       .then(data => {
         const price = data[coin][currency]
-        const formattedPrice = new Number(price).toLocaleString('pt-BR', {
+        const priceAmount = price * amount
+        const formattedPrice = new Number(priceAmount).toLocaleString('pt-BR', {
           minimumFractionDigits: 2,
           maximumFractionDigits: 2
         });
@@ -17,12 +24,10 @@ function converter() {
           'eur': '€'
         };
         const currencySymbol = currencySymbols[currency.toLowerCase()];
-        const resultado = document.getElementById('resultado');
-        resultado.innerHTML = `O ${coin} está valendo ${currencySymbol}${formattedPrice}`;
+        resultado.innerHTML = `${amount} ${coin} está valendo ${currencySymbol}${formattedPrice}`;
       })
       .catch(error => {
         console.error(error);
-        const resultado = document.getElementById('resultado');
         resultado.innerHTML = 'Erro ao converter a criptomoeda.';
       });
   }
@@ -38,55 +43,42 @@ function converter() {
   }
 
   const navbarBtn = document.querySelector("#navbar")
-  const navbarMobile = document.querySelector("#navbar-aberta-container")
-  const header = document.querySelector("header")
+  const navbar = document.querySelector("#navbar-aberta")
 
   navbarBtn.addEventListener("mouseover", () => {
-    navbarMobile.classList.toggle("fechada")
-    navbarMobile.classList.toggle("aberta")
+    navbar.classList.toggle("fechada")
+    navbar.classList.toggle("aberta")
   })
 
-  navbarMobile.addEventListener("mouseout", () => {
-    navbarMobile.classList.toggle("fechada")
-    navbarMobile.classList.toggle("aberta")
+  navbar.addEventListener("mouseout", () => {
+    navbar.classList.toggle("fechada")
+    navbar.classList.toggle("aberta")
   })
 
-  // animar os numeros de 0 a x 
+  window.addEventListener("scroll", function() {
+    var viewportHeight = window.innerHeight;
+    
+    if (window.scrollY > 0.9 * viewportHeight) {
+        document.getElementById("header-container").style = "background-color: black !important; color: white !important";
+        document.getElementById("navbar-aberta").style = "background-color: black !important";
+        document.querySelectorAll(".links").style = "color: white !important"
+    } else {
+        document.getElementById("header-container").style = "background-color: #f5f4f4aa";
+        document.getElementById("navbar-aberta").style = "background-color: #f5f4f4aa";
+        document.querySelectorAll(".links").style = "color: black"
+    }
+});
 
 
-  // counter paises
+const btnNavbarMobile = document.querySelector(".btn-navbar-mobile")
+const sidebarMobile = document.querySelector("#sidebar-aberta-container")
+const btnCloseSidebar = document.querySelector("#btn-close-sidebar")
 
-  
-//   let counter = 0;
-// const interval = setInterval(() => {
-//     console.log(counter);
-//     counter++;
-//     if (counter > 120) {
-//         clearInterval(interval);
-//     }
-// }, 10);
+btnNavbarMobile.addEventListener("click", () => {
+  sidebarMobile.classList.toggle("fechada")
+})
 
-  // counter regioes 
+btnCloseSidebar.addEventListener("click", () => {
+  sidebarMobile.classList.toggle("fechada")
+})
 
-
-  // let counter = 0;
-  // const interval = setInterval(() => {
-  //     console.log(counter);
-  //     counter++;
-  //     if (counter > 57) {
-  //         clearInterval(interval);
-  //     }
-  // }, 10);
-
-
-  // counter estados
-
-  // let counter = 0;
-  // const interval = setInterval(() => {
-  //     console.log(counter2);
-  //     counter ++;
-  //     if (counter > 2453) {
-  //         clearInterval(interval);
-  //     }
-
-  // }, 10);
