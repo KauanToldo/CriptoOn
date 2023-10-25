@@ -61,11 +61,15 @@ function converter() {
     if (window.scrollY > 0.9 * viewportHeight) {
         document.getElementById("header-container").style = "background-color: black !important; color: white !important; box-shadow: 0px 2px 6px black";
         document.getElementById("navbar-aberta").style = "background-color: black !important";
-        document.querySelectorAll(".links").style = "color: white !important"
+        document.getElementById("navbutton1").style = "color: white";
+        document.getElementById("navbutton2").style = "color: white";
+        document.getElementById("navbutton3").style = "color: white";
     } else {
         document.getElementById("header-container").style = "background-color: #f5f4f4aa";
         document.getElementById("navbar-aberta").style = "background-color: #f5f4f4aa";
-        document.querySelectorAll(".links").style = "color: black"
+        document.getElementById("navbutton1").style = "color: black";
+        document.getElementById("navbutton2").style = "color: black";
+        document.getElementById("navbutton3").style = "color: black";
     }
 });
 
