@@ -59,7 +59,7 @@ function converter() {
     var viewportHeight = window.innerHeight;
     
     if (window.scrollY > 0.9 * viewportHeight) {
-        document.getElementById("header-container").style = "background-color: black !important; color: white !important";
+        document.getElementById("header-container").style = "background-color: black !important; color: white !important; box-shadow: 0px 2px 6px black";
         document.getElementById("navbar-aberta").style = "background-color: black !important";
         document.querySelectorAll(".links").style = "color: white !important"
     } else {

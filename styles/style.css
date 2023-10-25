@@ -835,6 +835,28 @@ button:hover {
         margin-top: 50px;
     }
 
+    .numbers {
+        font-size: 50px !important;
+    }
+
+    #line-reg div h6 {
+        font-size: 16px !important;
+    }
+
+    #info-reg {
+        flex-direction: column;
+        gap: 50px !important;
+        margin-bottom: 50px;
+    }
+
+    #aplicacao-section {
+        padding-top: 50px;
+    }
+
+    #info-reg img {
+        width: 70% !important;
+    }
+
     #blockchain-section .paragraph {
         max-width: 100% !important;
     }
@@ -941,6 +963,24 @@ button:hover {
 
     #recursos p:nth-child(2) {
         font-size: 18px !important;
+    }
+
+    .item-cf:nth-child(2) {
+        margin-top: 0px !important;
+    }
+
+    .item-cf {
+        border-bottom: 2px solid var(--Gray);
+        padding-bottom: 50px;
+    }
+
+    .item-cf:last-child {
+        border-bottom: none;
+    }
+
+    #itens-cf {
+        gap: 50px;
+        margin-top: 30px;
     }
 
     #video-section h2 {
@@ -1296,7 +1336,7 @@ button:hover {
 }
 
 #regulamentacao {
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 #regulamentacao .subtitle-container {
