@@ -133,7 +133,7 @@ header div img {
 #home {
     height: 100vh;
     width: 100%;
-    background-image: url(../src/background-home.png);
+    background-image: url(../img/background-home.png);
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     display: flex;
@@ -402,7 +402,7 @@ li {
 
 #conversor {
     min-height: 100vh;
-    background-image: url(../src/conversor-background.png);
+    background-image: url(../img/conversor-background.png);
     background-size: cover;
     width: 100%;
     mix-blend-mode: exclusion;
@@ -654,7 +654,7 @@ button:hover {
 
 #origem-section {
     min-height: 100vh;
-    background-image: url(../src/background-home.png);
+    background-image: url(../img/background-home.png);
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     display: flex;
@@ -1529,7 +1529,7 @@ button:hover {
 #perspectivas {
     min-height: 100vh;
     width: 100vw;
-    background: url(../src/background-legalizacao.png), lightgray 50%;
+    background: url(../img/background-legalizacao.png), lightgray 50%;
     background-size: cover;
     padding-top: 150px;
     display: flex;
@@ -1605,31 +1605,31 @@ button:hover {
 }
 
 #kauan {
-    background-image: url(../src/kauan.png);
+    background-image: url(../img/kauan.png);
 }
 
 #maria {
-    background-image: url(../src/maria.png);
+    background-image: url(../img/maria.png);
 }
 
 #ana {
-    background-image: url(../src/ana.png);
+    background-image: url(../img/ana.png);
 }
 
 #andre {
-    background-image: url(../src/andre.png);
+    background-image: url(../img/andre.png);
 }
 
 #lerner {
-    background-image: url(../src/lerner.png);
+    background-image: url(../img/lerner.png);
 }
 
 #matteo {
-    background-image: url(../src/matteo.jpeg);
+    background-image: url(../img/matteo.jpeg);
 }
 
 #davi {
-    background-image: url(../src/davi.jpeg);
+    background-image: url(../img/davi.jpeg);
 }
 
 /* ------------------------------------------------- ANIMAÇÃO SEÇÕES -------------------------------------------------- */
@@ -1649,7 +1649,7 @@ opacity: 1;
 /* ------------------------------------------------ FOOTER --------------------------------------------------------- */
 
 footer {
-    background-image: url(../src/background-footer.png);
+    background-image: url(../img/background-footer.png);
     background-size: cover;
     justify-content: end;
     display: flex;
