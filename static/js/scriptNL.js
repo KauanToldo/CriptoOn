@@ -4,27 +4,31 @@ const submitBtn = document.querySelector("#submitBtn")
 const emailInput = document.querySelector("#email")
 const nameInput = document.querySelector("#name")
 
-submitBtn.addEventListener("click", () => {
-    main.style="display:none"
-    success.style="display:flex"
-})
-
 function submitForm(event) {
     event.preventDefault()
-    console.log("clicou")
     const email = document.querySelector("#email").value
     const name = document.querySelector("#name").value
-    const data = {
+    const dataUser = {
         email: email,
         name: name
     }
     fetch('http://127.0.0.1:5000/cadastro', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify(dataUser),
       headers: {
         'Content-Type': 'application/json'
       }
     })
     .then(response => response.json())
-    .then(data => data);
+    .then(data => {
+      if (data.error) {
+        alert(data.error);
+        return
+      }
+      main.style="display:none"
+      success.style="display:flex"
+    })
+    .catch(error => {
+      console.error('Erro na requisição:', error.message);
+    })
 }

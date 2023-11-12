@@ -381,7 +381,7 @@ li {
     opacity: 0.6;
 }
 
-#indicators div {
+.indicator, .indicatorsAPI {
     width: 50px;
     height: 5px;
     border-radius: 10px;
@@ -389,7 +389,7 @@ li {
     opacity: 0.6;
 }
 
-#indicators div:first-child {
+.checked {
     opacity: 1;
 }
 
@@ -506,9 +506,11 @@ option {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: var(--White);
     font-family: Rajdhani;
     margin: 10px;
+    width: 100%;
 }
 
 #inputs svg {
@@ -522,7 +524,7 @@ select {
     cursor: pointer;
 }
 
-#btn-newslerner,  #convert, #btn-footer{
+#btn-newslerner,  #convert, #btn-footer, #btn-outrolado{
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
@@ -795,277 +797,6 @@ button:hover {
     color: #CE5F20;
 }
 
-/* ---------------------------------------------------------- MEDIA QUERIES ------------------------------------------------------------------ */
-
-@media screen and (max-width: 949px) {
-    #background-cards {
-        width: 1px !important;
-        height: 100%;
-        top: 40%;
-    }
-
-    #cards {
-        margin-top: 300px;
-    }
-
-    .item-bc {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .recurso-card {
-        width: 100% !important;
-    }
-
-    #recursos-cards {
-        display: flex;
-        gap: 100px !important;
-        justify-content: center !important;
-    }
-
-    #meio-recursos {
-        align-items: center !important;
-    }
-}
-
-@media screen and (max-width: 1330px) {
-
-    #blockchain-section {
-        margin-top: 50px;
-    }
-
-    .numbers {
-        font-size: 50px !important;
-    }
-
-    #line-reg div h6 {
-        font-size: 16px !important;
-    }
-
-    #info-reg {
-        flex-direction: column;
-        gap: 50px !important;
-        margin-bottom: 50px;
-    }
-
-    #aplicacao-section {
-        padding-top: 50px;
-    }
-
-    #info-reg img {
-        width: 70% !important;
-    }
-
-    #blockchain-section .paragraph {
-        max-width: 100% !important;
-    }
-
-    .item-bc:first-child, .item-bc:nth-child(3) {
-        align-self: center !important;
-    }
-
-    .item-bc {
-        max-width: 80% !important;
-    }
-
-    #itens-blockchain {
-        padding: 0px 0px !important;
-    }
-
-    #info-mineracao {
-        flex-direction: column-reverse;
-        gap: 50px;
-    }
-
-    #mineracao {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    #info-mineracao img {
-        max-width: 80%;
-    }
-
-    #board {
-        width: 90%;
-    }
-
-    #ref-origem {
-        max-width: 100%;
-    }
-
-    .section {
-        padding: 0px 50px !important;
-    }
-
-    #inputs {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #inputs svg {
-        transform: rotate(-90deg);
-    }
-
-    #uq {
-        flex-direction: column-reverse;
-        gap: 25px;
-    }
-
-    #uq img {
-        width: 50%;
-    }
-
-    #tipos-display {
-        flex-direction: column;
-    }
-
-    #indicators div {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-    }
-
-    #line-carroussel svg {
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-    }
-
-    #tipos {
-        gap: 50px;
-    }
-
-    #info-tipos {
-        width: 95%;
-    }
-
-    .paragraph {
-        text-align: justify;
-    }
-
-    #icons img {
-        width: 200px;
-    }
-
-    #moedas-historia {
-        flex-direction: column;
-        gap: 80px;
-    }
-
-    #moedas-historia #line-carroussel {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 760px) {
-
-    #recursos p:nth-child(2) {
-        font-size: 18px !important;
-    }
-
-    .item-cf:nth-child(2) {
-        margin-top: 0px !important;
-    }
-
-    .item-cf {
-        border-bottom: 2px solid var(--Gray);
-        padding-bottom: 50px;
-    }
-
-    .item-cf:last-child {
-        border-bottom: none;
-    }
-
-    #itens-cf {
-        gap: 50px;
-        margin-top: 30px;
-    }
-
-    #video-section h2 {
-        font-size: 26px;
-        letter-spacing: 4px;
-    }
-
-    .card {
-        width: 100% !important;
-    }
-
-    #icons-moedas img {
-        height: 350px !important;
-    }
-
-    .item-bc p {
-        font-size: 20px !important;
-    }
-
-    .item-bc h3 {
-        font-size: 26px !important;
-    }
-
-    #video-section iframe {
-        width: 100% !important;
-        height: 175px;
-    }
-
-    #title-home span {
-        font-size: 50px;
-    }
-
-    #inputs select {
-        width: 250px;
-    }
-
-    #uq img {
-        width: 90%;
-    }
-
-    #line-title {
-        display: none;
-    }
-
-    #home {
-        justify-content: center;
-    }
-
-    #btn-newslerner {
-        display: none !important;
-    }
-
-    header .btn-navbar-mobile {
-        display: block !important;
-    }
-
-    #navbar {
-        display: none !important;
-    }
-
-    #title-home {
-        font-size: 60px;
-        line-height: 50px;
-        margin-left: 0 !important;
-        animation: slide-in-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both !important;
-    }
-
-    #title-container {
-        margin-left: 0 !important;
-        text-align: center;
-    }
-
-    .subtitle {
-        font-size: 35px !important;
-    }
-
-    #caracteristicas .subtitle span {
-        font-size: 22px !important;
-        letter-spacing: 4px !important;
-    }
-
-    .paragraph {
-        font-size: 20px;
-    }
-}
-
 /* NAVBAR MOBILE */
 
 #sidebar-aberta-container {
@@ -1198,12 +929,7 @@ button:hover {
     margin-top: 150px;
     gap: 50px;
     flex-wrap: wrap;
-}
-
-#meio-recursos {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    justify-content: center;
 }
 
 .recurso-card {
@@ -1222,6 +948,11 @@ button:hover {
     background: #EED44C;
     box-shadow: 0px 0px 36px 10px rgba(255, 245, 0, 0.38);
     scale: 1.05;
+}
+
+.livro:hover {
+    background-color: #464646;
+    box-shadow: 0px 0px 36px 10px #EED44C;
 }
 
 .recurso-card div {
@@ -1264,16 +995,16 @@ button:hover {
     line-height: 31px;
 }
 
-.recurso-card h3:first-child {
+.livro h3 {
     margin-top: 0;
     color: #FFE248;
 }
 
-.recurso-card:nth-child(2) {
+.livro {
     background-color: #464646;
 }
 
-.recurso-card:nth-child(2) p {
+.livro p {
     color: white;
 }
 
@@ -1292,6 +1023,7 @@ button:hover {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .item-cf {
@@ -1335,7 +1067,7 @@ button:hover {
 }
 
 #regulamentacao {
-    padding-top: 50px;
+    padding-top: 50px !important;
 }
 
 #regulamentacao .subtitle-container {
@@ -1447,7 +1179,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -1531,9 +1263,11 @@ button:hover {
     width: 100vw;
     background: url(../img/background-legalizacao.png), lightgray 50%;
     background-size: cover;
+    background-position: center;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #perspectivas p {
@@ -1756,5 +1490,332 @@ footer button {
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+/* ---------------------------------------------------------- MEDIA QUERIES ------------------------------------------------------------------ */
+
+@media screen and (max-width: 949px) {
+    #background-cards {
+        width: 1px !important;
+        height: 100%;
+        top: 40%;
+    }
+
+    #cards {
+        margin-top: 300px;
+    }
+
+    .item-bc {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recurso-card {
+        width: 100% !important;
+    }
+
+    #recursos-cards {
+        display: flex;
+        gap: 100px !important;
+        justify-content: center !important;
+    }
+
+    #meio-recursos {
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+
+    #blockchain-section {
+        margin-top: 50px;
+    }
+
+    .dado-pais {
+        flex-direction: column !important;
+        gap: 0px;
+        margin-bottom: 75px;
+    }
+
+    .dado-pais div {
+        width: 150px !important;
+        height: 150px !important;
+        font-size: 55px !important;
+    }
+
+    .dado-pais .paragraph {
+        margin-top: 50px !important;
+        text-align: center !important;
+    }
+
+    #first-paises {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px !important;
+    }
+
+    #first-paises p {
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .numbers {
+        font-size: 50px !important;
+    }
+
+    #line-reg div h6 {
+        font-size: 16px !important;
+    }
+
+    #info-reg {
+        flex-direction: column;
+        gap: 50px !important;
+        margin-bottom: 50px;
+    }
+
+    #aplicacao-section {
+        padding-top: 50px;
+    }
+
+    #info-reg img {
+        width: 70% !important;
+    }
+
+    #blockchain-section .paragraph {
+        max-width: 100% !important;
+    }
+
+    .item-bc:first-child, .item-bc:nth-child(3) {
+        align-self: center !important;
+    }
+
+    .item-bc {
+        max-width: 80% !important;
+    }
+
+    #itens-blockchain {
+        padding: 0px 0px !important;
+    }
+
+    #info-mineracao {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #mineracao {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #info-mineracao img {
+        max-width: 80%;
+    }
+
+    #board {
+        width: 90%;
+    }
+
+    #ref-origem {
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 5px 50px !important;
+    }
+
+    #inputs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #inputs svg {
+        transform: rotate(-90deg);
+    }
+
+    #uq {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    #uq img {
+        width: 50%;
+    }
+
+    #tipos-display {
+        flex-direction: column;
+    }
+
+    #indicators div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    #line-carroussel svg {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    #tipos {
+        gap: 50px;
+    }
+
+    #info-tipos {
+        width: 95%;
+    }
+
+    .paragraph {
+        text-align: justify;
+    }
+
+    #icons img {
+        width: 200px;
+    }
+
+    #moedas-historia {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #moedas-historia #line-carroussel {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    #btn-outrolado {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding: 5px 25px;
+    }
+
+    #perspectivas label {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    #recursos p:nth-child(2) {
+        font-size: 18px !important;
+        line-height: 32px;
+    }
+
+    #flags {
+        grid-template-columns: repeat(2, 151px) !important;
+        grid-template-rows: repeat(3, 94px) !important;
+    }
+
+    .flag {
+        width: 100%;
+        height: 100%;
+    }
+
+    .item-cf:nth-child(2) {
+        margin-top: 0px !important;
+    }
+
+    .item-cf {
+        border-bottom: 2px solid var(--Gray);
+        padding-bottom: 50px;
+    }
+
+    .item-cf:last-child {
+        border-bottom: none;
+    }
+
+    #itens-cf {
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    #video-section h2 {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    #icons-moedas img {
+        height: 350px !important;
+    }
+
+    .item-bc p {
+        font-size: 20px !important;
+    }
+
+    .item-bc h3 {
+        font-size: 26px !important;
+    }
+
+    #video-section iframe {
+        width: 100% !important;
+        height: 175px;
+    }
+
+    #title-home span {
+        font-size: 50px;
+    }
+
+    #inputs select {
+        width: 90%;
+    }
+
+    #coin {
+        width: calc(90% - 50px) !important;
+    }
+
+    #uq img {
+        width: 90%;
+    }
+
+    #line-title {
+        display: none;
+    }
+
+    #home {
+        justify-content: center;
+    }
+
+    #btn-newslerner {
+        display: none !important;
+    }
+
+    header .btn-navbar-mobile {
+        display: block !important;
+    }
+
+    #navbar {
+        display: none !important;
+    }
+
+    #title-home {
+        font-size: 60px;
+        line-height: 50px;
+        margin-left: 0 !important;
+        animation: slide-in-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both !important;
+    }
+
+    #title-container {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 35px !important;
+    }
+
+    #caracteristicas .subtitle span {
+        font-size: 22px !important;
+        letter-spacing: 4px !important;
+    }
+
+    .paragraph {
+        font-size: 18px !important;
+        line-height: 32px;
+
     }
 }
