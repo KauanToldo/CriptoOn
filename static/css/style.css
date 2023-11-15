@@ -59,9 +59,33 @@ html, body {
 
 /* --------------------------------------------------- HEADER -------------------------------------------------------- */
 
+#back-to-top {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: var(--Gold);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-to-top:hover {
+    /* transform: translateY(-5px); */
+    padding: 5px;
+}
+
 header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     align-items: center;

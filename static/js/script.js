@@ -35,6 +35,13 @@ function converter() {
 
 // Animação "revelar" das seções
 window.onscroll = () => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById('back-to-top').style.display = 'block';
+      document.getElementById('back-to-top').style.opacity = '1';
+  } else {
+      document.getElementById('back-to-top').style.display = 'none';
+      document.getElementById('back-to-top').style.opacity = '0';
+  }
   document.querySelectorAll('.reveal').forEach(e => {
     if (e.getBoundingClientRect().top < window.innerHeight - 100) {
       e.classList.add('active');
@@ -61,23 +68,28 @@ navbar.addEventListener("mouseout", () => {
 
 
 // Evento de troca de cor do header
-window.addEventListener("scroll", function() {
-  var viewportHeight = window.innerHeight;
+// window.addEventListener("scroll", function() {
+//   var viewportHeight = window.innerHeight;
     
-  if (window.scrollY > 0.9 * viewportHeight) {
-    document.getElementById("header-container").style = "background-color: black !important; color: white !important; box-shadow: 0px 2px 6px black";
-    document.getElementById("navbar-aberta").style = "background-color: black !important";
-    document.getElementById("navbutton1").style = "color: white";
-    document.getElementById("navbutton2").style = "color: white";
-    document.getElementById("navbutton3").style = "color: white";
-  } else {
-    document.getElementById("header-container").style = "background-color: #f5f4f4aa";
-    document.getElementById("navbar-aberta").style = "background-color: #f5f4f4aa";
-    document.getElementById("navbutton1").style = "color: black";
-    document.getElementById("navbutton2").style = "color: black";
-    document.getElementById("navbutton3").style = "color: black";
-  }
-});
+//   if (window.scrollY > 0.9 * viewportHeight) {
+//     document.getElementById("header-container").style = "background-color: black !important; color: white !important; box-shadow: 0px 2px 6px black";
+//     document.getElementById("navbar-aberta").style = "background-color: black !important";
+//     document.getElementById("navbutton1").style = "color: white";
+//     document.getElementById("navbutton2").style = "color: white";
+//     document.getElementById("navbutton3").style = "color: white";
+//   } else {
+//     document.getElementById("header-container").style = "background-color: #f5f4f4aa";
+//     document.getElementById("navbar-aberta").style = "background-color: #f5f4f4aa";
+//     document.getElementById("navbutton1").style = "color: black";
+//     document.getElementById("navbutton2").style = "color: black";
+//     document.getElementById("navbutton3").style = "color: black";
+//   }
+// });
+
+// Mostra ou esconde o botão to top com base na posição da página
+// window.onscroll = function() {
+//     
+// };
 
 
 // Evento de abrir e fechar sidebar mobile
