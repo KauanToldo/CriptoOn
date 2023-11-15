@@ -65,18 +65,18 @@
                         <div class="line-titles-black"></div>
                         <h2 class="subtitle titleleft">TIPOS DE<br>CRIPTOMOEDAS</h2>
                     </div>
-                    <p class="paragraph paragraph-dark">Atualmente existem milhares de tipos de criptomoedas em circulação no mercado, cada uma com um diferencial e um propósito distinto. atualmente existem milhares de tipos de criptomoedas em circulação no mercado, cada uma com um diferencial e um propósito distinto. abaixo estão algumas das principais representantes desta moeda.</p>
+                    <p class="paragraph paragraph-dark">Atualmente existem milhares de tipos de criptomoedas em circulação no mercado, cada uma com um diferencial e um propósito distinto. Atualmente existem milhares de tipos de criptomoedas em circulação no mercado, cada uma com um diferencial e um propósito distinto. abaixo estão algumas das principais representantes desta moeda.</p>
                 </div>
                 <div id="tipos-display">
                     <div class="carroussel" id="carroussel-tipos">
                         <div id="icons">
-                            <div class="cripto-tipo" id="bitcoin">
-                                <img src="../static/img/bitcoin-icon.svg" alt="">
-                                <h6>BITCOIN</h6>
+                            <div class="cripto-tipo">
+                                <img id="imgAPI"  src="../static/img/bitcoin-icon.svg" alt="">
+                                <h6 id="nameMoeda">BITCOIN</h6>
                             </div>
                         </div>
                         <div id="line-carroussel">
-                            <svg class="line-icon-tipos" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
+                            <svg id="backBtn" class="line-icon-tipos" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
                                 <path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807612 11.0711 0.807612 10.4853 1.3934L0.93934 10.9393ZM37 10.5L2 10.5V13.5L37 13.5V10.5Z" fill="white"/>
                             </svg>
                             <div id="indicators">
@@ -84,9 +84,8 @@
                                 <div class="indicatorsAPI"></div>
                                 <div class="indicatorsAPI"></div>
                                 <div class="indicatorsAPI"></div>
-                                <div class="indicatorsAPI"></div>
                             </div>
-                            <svg class="line-icon-tipos" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
+                            <svg id="nextBtn" class="line-icon-tipos" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
                                 <path d="M36.0607 13.0607C36.6464 12.4749 36.6464 11.5251 36.0607 10.9393L26.5147 1.3934C25.9289 0.807611 24.9792 0.807611 24.3934 1.3934C23.8076 1.97919 23.8076 2.92893 24.3934 3.51472L32.8787 12L24.3934 20.4853C23.8076 21.0711 23.8076 22.0208 24.3934 22.6066C24.9792 23.1924 25.9289 23.1924 26.5147 22.6066L36.0607 13.0607ZM0 13.5L35 13.5V10.5L0 10.5L0 13.5Z" fill="white"/>
                             </svg>
                         </div>
@@ -174,7 +173,7 @@
             <div class="section reveal" id="moedas-historia">
                 <div class="carroussel" id="carroussel-moedas">
                     <div id="icons-moedas">
-                        <img src="../static/img/moeda-metalica.png" alt="">
+                        <img id="moedas-img" src="../static/img/moeda-metalica.png" alt="">
                     </div>
                     <div id="line-carroussel">
                         <svg id="backBtn2" class="line-icon-moedas" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
@@ -185,7 +184,6 @@
                             <div class="indicator"></div>
                             <div class="indicator"></div>
                             <div class="indicator"></div>
-                            <div class="indicator"></div>
                         </div>
                         <svg id="nextBtn2" class="line-icon-moedas" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
                             <path d="M36.0607 13.0607C36.6464 12.4749 36.6464 11.5251 36.0607 10.9393L26.5147 1.3934C25.9289 0.807611 24.9792 0.807611 24.3934 1.3934C23.8076 1.97919 23.8076 2.92893 24.3934 3.51472L32.8787 12L24.3934 20.4853C23.8076 21.0711 23.8076 22.0208 24.3934 22.6066C24.9792 23.1924 25.9289 23.1924 26.5147 22.6066L36.0607 13.0607ZM0 13.5L35 13.5V10.5L0 10.5L0 13.5Z" fill="gray"/>
@@ -193,8 +191,8 @@
                     </div>
                 </div>
                 <div id="info-moedas">
-                    <h3>MOEDAS METÁLICAS</h2>
-                    <p class="paragraph">Inicialmente as moedas metálicas surgiram como um instrumento de troca favorável devido seu material resistente, o qual podia ser estocado sem deteriorar. esses materiais variavam entre ferro, cobre, bronze, ouro e prata. contudo, foi identificado um problema com a circulação dessas moedas por conta da necessidade de transportar grandes quantias da mesma. tendo em vista as dificuldades e riscos de transporte, foram criadas instituições responsáveis por armazenar essas moedas, cujas forneciam um certificado que atuava como comprovante da quantia reservada.</p>
+                    <h3 id="title-moedas">MOEDAS METÁLICAS</h2>
+                    <p id="text-moedas" class="paragraph">Inicialmente as moedas metálicas surgiram como um instrumento de troca favorável devido seu material resistente, o qual podia ser estocado sem deteriorar. esses materiais variavam entre ferro, cobre, bronze, ouro e prata. contudo, foi identificado um problema com a circulação dessas moedas por conta da necessidade de transportar grandes quantias da mesma. tendo em vista as dificuldades e riscos de transporte, foram criadas instituições responsáveis por armazenar essas moedas, cujas forneciam um certificado que atuava como comprovante da quantia reservada.</p>
                 </div>
             </div>
             <div class="section reveal" id="mineracao">
@@ -380,13 +378,48 @@
                 <div></div>
             </div>
             <div id="team-profiles">
-                <div id="kauan" class="profile"></div>
-                <div id="maria" class="profile"></div>
-                <div id="ana" class="profile"></div>
-                <div id="andre" class="profile"></div>
-                <div id="davi" class="profile"></div>
-                <div id="matteo" class="profile"></div>
-                <div id="lerner" class="profile"></div>
+                <div id="kauan" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">KAUAN LUCAS TOLDO</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="maria" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">MARIA ISABEL</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="ana" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">ANA KELLY</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="andre" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">ANDRÉ LUIZ RIGO</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="davi" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">DAVI LUCAS</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="matteo" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">MATTEO THOMÉ</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div id="lerner" class="profile">
+                    <div class="desc-profile">
+                        <span class="name">JOÃO PEDRO LERNER</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

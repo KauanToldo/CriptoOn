@@ -333,8 +333,12 @@ li {
     font-weight: bold;
 }
 
+.negative {
+    color: red !important;
+}
+
 #mudanca-value {
-    color: red;
+    color: rgb(0, 196, 0);
 }
 
 #carrousel-tipos {
@@ -359,6 +363,7 @@ li {
     font-family: 'Teko', sans-serif;
     font-weight: 400;
     margin-top: 10px;
+    text-transform: capitalize;
 }
 
 #line-carroussel {
@@ -375,10 +380,6 @@ li {
     height: 75px;
     border: 2px solid rgba(255, 255, 255, 0.40);
     cursor: pointer;
-}
-
-#line-carroussel .line-icon-tipos:first-child {
-    opacity: 0.6;
 }
 
 .indicator, .indicatorsAPI {
@@ -744,13 +745,9 @@ button:hover {
     cursor: pointer;
 }
 
-#line-carroussel .line-icon-moedas:first-child {
-    opacity: 0.6;
-}
-
 #icons-moedas img {
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 #icons-moedas {
@@ -1366,6 +1363,32 @@ button:hover {
     background-image: url(../img/davi.jpeg);
 }
 
+.desc-profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.599);
+    padding: 10px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.name {
+    max-width: 50%;
+    font-family: 'Rajdhani';
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.fa-linkedin {
+    color: #F7931A;
+    font-size: 45px;
+}
+
 /* ------------------------------------------------- ANIMAÇÃO SEÇÕES -------------------------------------------------- */
 
 .reveal{
@@ -1818,4 +1841,18 @@ footer button {
         line-height: 32px;
 
     }
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilos para o "rastreador" da barra de rolagem (a barra em si) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--Gold); /* Cor dourada */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--Gray); /* Cor de fundo */
 }
