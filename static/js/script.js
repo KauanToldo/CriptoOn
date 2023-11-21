@@ -66,32 +66,6 @@ navbar.addEventListener("mouseout", () => {
   navbar.classList.toggle("aberta")
 })
 
-
-// Evento de troca de cor do header
-// window.addEventListener("scroll", function() {
-//   var viewportHeight = window.innerHeight;
-    
-//   if (window.scrollY > 0.9 * viewportHeight) {
-//     document.getElementById("header-container").style = "background-color: black !important; color: white !important; box-shadow: 0px 2px 6px black";
-//     document.getElementById("navbar-aberta").style = "background-color: black !important";
-//     document.getElementById("navbutton1").style = "color: white";
-//     document.getElementById("navbutton2").style = "color: white";
-//     document.getElementById("navbutton3").style = "color: white";
-//   } else {
-//     document.getElementById("header-container").style = "background-color: #f5f4f4aa";
-//     document.getElementById("navbar-aberta").style = "background-color: #f5f4f4aa";
-//     document.getElementById("navbutton1").style = "color: black";
-//     document.getElementById("navbutton2").style = "color: black";
-//     document.getElementById("navbutton3").style = "color: black";
-//   }
-// });
-
-// Mostra ou esconde o botão to top com base na posição da página
-// window.onscroll = function() {
-//     
-// };
-
-
 // Evento de abrir e fechar sidebar mobile
 const btnNavbarMobile = document.querySelector(".btn-navbar-mobile")
 const sidebarMobile = document.querySelector("#sidebar-aberta-container")
@@ -115,8 +89,8 @@ const textMoedas = document.querySelector("#text-moedas")
 const imgMoedas = document.querySelector("#moedas-img")
 let condition2 = 0
 let texts = [
-    "Inicialmente as moedas metálicas surgiram como um instrumento de troca favorável devido seu material resistente, o qual podia ser estocado sem deteriorar. esses materiais variavam entre ferro, cobre, bronze, ouro e prata. contudo, foi identificado um problema com a circulação dessas moedas por conta da necessidade de transportar grandes quantias da mesma. tendo em vista as dificuldades e riscos de transporte, foram criadas instituições responsáveis por armazenar essas moedas, cujas forneciam um certificado que atuava como comprovante da quantia reservada.",
-    "Tendo em vista os problemas decorrentes do sistema monetário baseado em metais preciosos, surgiu a moeda papel. Ela foi uma forma de contornar os inconvenientes da moeda metálica, mantendo a característica de instrumentos monetários mais flexíveis e facilitando a efetivação de operações de crédito. Contudo as relações comerciais só seriam desenvolvidas caso essa nova foma de pagamento passasse a ser aceita de forma ampla. Em seguida surgem os certificados de depósito, instituindo a moeda papel com possibilidade de conversibilidade.",
+    "Inicialmente as moedas metálicas surgiram como um instrumento de troca favorável devido seu material resistente, o qual podia ser estocado sem deteriorar. Esses materiais variavam entre ferro, cobre, bronze, ouro e prata. Contudo, foi identificado um problema com a circulação dessas moedas por conta da necessidade de transportar grandes quantias da mesma. Tendo em vista as dificuldades e riscos de transporte, foram criadas instituições responsáveis por armazenar essas moedas, cujas forneciam um certificado que atuava como comprovante da quantia reservada.",
+    "Tendo em vista os problemas decorrentes do sistema monetário baseado em metais preciosos, surgiu a moeda papel. Ela foi uma forma de contornar os inconvenientes da moeda metálica, mantendo a característica de instrumentos monetários mais flexíveis e facilitando a efetivação de operações de crédito. Contudo as relações comerciais só seriam desenvolvidas caso essa nova forma de pagamento passasse a ser aceita de forma ampla. Em seguida surgem os certificados de depósito, instituindo a moeda papel com possibilidade de conversibilidade.",
     "Após a popularização da moeda-papel, as instituições emissoras de certificados de depósito perceberam que o lastro total era desnecessário, pois os detentores não buscavam a reconversão simultânea. A confiança nas instituições permitiu a emissão de certificados com lastro inferior a 100%, originando o papel-moeda. O papel-moeda evoluiu, abandonando gradualmente a necessidade de posse de metais para emissão. Desde 1971, com o fim do lastro do dólar em ouro, os sistemas monetários internacionais operam de maneira puramente fiduciária.",
     "No século XIX, na Inglaterra, a moeda bancária surgiu acidentalmente, baseada em depósitos monetários em instituições bancárias. Movimentada por cheques, essa forma de moeda causou uma expansão significativa dos meios de pagamento. Com a evolução digital, a moeda bancária tornou-se predominantemente virtual, existindo como arquivos nos servidores bancários. Atualmente, a extensa utilização da moeda bancária, aliada à moeda fiduciária, reflete um processo de desmaterialização, afastando-se cada vez mais de representações físicas como produtos ou metais."
 ]
