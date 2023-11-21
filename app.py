@@ -25,6 +25,11 @@ def index():
 @app.route('/newsletter')
 def newsletter():
     return render_template('cadastro.html')
+
+# Rota da página da perspectiva legalizada
+@app.route('/perspectiva')
+def perspectiva():
+    return render_template('perspectiva.html')
     
 # Rota de cadastro
 @app.route("/cadastro", methods=["POST"])

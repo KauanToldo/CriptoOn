@@ -55,6 +55,7 @@ html, body {
     text-decoration: none;
     font-family: Rajdhani;
     font-weight: 500;
+    color: black;
 }
 
 /* --------------------------------------------------- HEADER -------------------------------------------------------- */
@@ -834,12 +835,17 @@ button:hover {
 
 #sidebar-aberta-container a {
     text-decoration: none;
-    color: var(--White);
+    color: black;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Rajdhani', sans-serif;
 }
+
+#sidebar-aberta-container a li {
+    color: black !important;
+}
+
 
 #btn-newslerner-sidebar {
     border: none;
