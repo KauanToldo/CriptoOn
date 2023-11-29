@@ -835,7 +835,7 @@ button:hover {
 
 #sidebar-aberta-container a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 20px;
@@ -843,7 +843,7 @@ button:hover {
 }
 
 #sidebar-aberta-container a li {
-    color: black !important;
+    color: white !important;
 }
 
 
