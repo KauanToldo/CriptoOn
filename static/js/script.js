@@ -158,10 +158,10 @@ const volume = document.querySelector("#volume-value")
 const nameMoeda = document.querySelector('#nameMoeda')
 let condition = 0
 let imagesAPI = [
-  "../img/bitcoin-icon.svg",
-  "../img/ethereum-icon.svg",
-  "../img/tether-icon.svg",
-  "../img/litecoin-icon.svg"
+  "./../img/bitcoin-icon.svg",
+  "./../img/ethereum-icon.svg",
+  "./../img/tether-icon.svg",
+  "./../img/litecoin-icon.svg"
 ]
 let names = [
   "bitcoin", "ethereum", "tether", "litecoin"
