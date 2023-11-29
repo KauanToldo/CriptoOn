@@ -98,10 +98,10 @@ let titles = [
     "MOEDA METÁLICA","MOEDA PAPEL","MOEDA FIDUCIÁRIA","MOEDA BANCÁRIA"
 ]
 let icons2 = [
-    "../static/img/moeda-metalica.png",
-    "../static/img/moeda-papel.png",
-    "../static/img/moeda-fiduciaria.png",
-    "../static/img/moeda-bancaria.png",
+    "../img/moeda-metalica.png",
+    "../img/moeda-papel.png",
+    "../img/moeda-fiduciaria.png",
+    "../img/moeda-bancaria.png",
 ]
 
 backBtn2.addEventListener("click", () => {
@@ -158,10 +158,10 @@ const volume = document.querySelector("#volume-value")
 const nameMoeda = document.querySelector('#nameMoeda')
 let condition = 0
 let imagesAPI = [
-  "../static/img/bitcoin-icon.svg",
-  "../static/img/ethereum-icon.svg",
-  "../static/img/tether-icon.svg",
-  "../static/img/litecoin-icon.svg"
+  "../img/bitcoin-icon.svg",
+  "../img/ethereum-icon.svg",
+  "../img/tether-icon.svg",
+  "../img/litecoin-icon.svg"
 ]
 let names = [
   "bitcoin", "ethereum", "tether", "litecoin"
