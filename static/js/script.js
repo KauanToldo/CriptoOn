@@ -98,10 +98,10 @@ let titles = [
     "MOEDA METÁLICA","MOEDA PAPEL","MOEDA FIDUCIÁRIA","MOEDA BANCÁRIA"
 ]
 let icons2 = [
-    "./img/moeda-metalica.png",
-    "./img/moeda-papel.png",
-    "./img/moeda-fiduciaria.png",
-    "./img/moeda-bancaria.png",
+    "./static/img/moeda-metalica.png",
+    "./static/img/moeda-papel.png",
+    "./static/img/moeda-fiduciaria.png",
+    "./static/img/moeda-bancaria.png",
 ]
 
 backBtn2.addEventListener("click", () => {
